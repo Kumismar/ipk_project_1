@@ -1,4 +1,4 @@
-# ipk_project_1
+# IPK project 1
 
 Client for server calculator for IPK course at FIT BUT. 
 
