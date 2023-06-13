@@ -4,7 +4,7 @@ Client implementation of [IPK Calculator Protocol](https://git.fit.vutbr.cz/NESF
 
 Please note that the code doesn't work without the server (but you can make your own if you're brave enough). 
 
-If you'd like to try tests and don't have system-wide Google-test library installed, then write your own Makefile. If you have Google-test library installed, don't forget to provide full path to my Makefile and the you can run `make test` which compiles the tests and `make runtest` which runs the tests. 
+If you want to run tests, compilethe project with `make`, compile test files with `make test` and run it with `make runtest` (all of them in project root); dont't forget to `make clean` so you won't leave a mess. 
 
 Final evaluation: 16/20; mostly documentation and bibliography issues (you don't have to search for it in this repo, it's not here).
 
