@@ -39,16 +39,14 @@ run:
 	@[ -f $(EXECUTABLE) ] || echo "The program executable doesn't exist. You can create it by running 'make'.\n"
 	./$(EXECUTABLE) $(CMDL_ARGS)
 
-test: $(TEST_OBJ)
-	@[ -d $(BUILD) ] || mkdir $(BUILD)
-	$(CXX) $(TEST_SRC) $^ $(GTEST_LIB) -o $(TEST_EXEC)
+test: 
+	@cd tests && [ -d build/ ] || mkdir build/ && cd build/ && cmake .. && make -s
 
 runtest: 
-	@[ -f $(TEST_EXEC) ] || echo "The testing executable doesn't exist. You can create it by running 'make test'.\n"
-	$(TEST_EXEC)
+	./$(TESTDIR)/build/testos
 	
 valgrind:
 	valgrind $(VALGRIND_OPTIONS) ./$(EXECUTABLE) $(CMDL_ARGS)
 
 clean: 
-	@rm -rvf $(BUILD) $(EXECUTABLE)
+	@rm -rvf $(BUILD) $(EXECUTABLE) $(TESTDIR)/$(BUILD)
