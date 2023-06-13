@@ -1,6 +1,6 @@
 # IPK project 1
 
-Client for server calculator for IPK course at FIT BUT. 
+Client of [IPK Calculator Protocol](https://git.fit.vutbr.cz/NESFIT/IPK-Projekty/src/branch/master/Project%201/Protocol.md) for IPK course at FIT BUT. 
 
 Please note that the code doesn't work without the server (but you can make your own if you're brave enough). 
 
